@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'B612';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('B612 Regular'), local('B612-Regular'), url(https://fonts.gstatic.com/s/b612/v3/3JnySDDxiSz36j6yGQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+    margin: 0;
+    font-family: 'B612', sans-serif;
+    line-height: 40px;
+}
+
+a {
+    transition: 0.5s;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(7,55,99, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+  
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ccc;
+    display: block;
+    transition: 0.3s;
+    line-height: 30px;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    color: #fff;
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+  
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+  
+.menu-button {
+    font-size:20px;
+    cursor:pointer;
+    float: left;
+    margin: 20px;
+    border-radius: 0px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    padding: 10px;
+    line-height: 20px;
+    transition: 0.5s;
+}
+  
+.menu-button:hover {
+    color: #073763;
+    border-color: #ffffff;
+    background-color: #fff;
+}
+  
+.nav-bar {
+    background-color: #073763;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19);
+    height: 80px;
+}
+
+.cafe-feed {
+    background-color: #000;
+}
+
+.card {
+    width: 50%;
+    padding: 20px;
+    margin: 20px auto 20px auto;
+    box-shadow:0 2px 4px 0 rgba(0,0,0,0.2),0 1.5px 5px 0 rgba(0,0,0,0.19);
+}
+
+.uoscs {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.unordered-sandwich-card {
+    width: 20%;
+    padding: 20px;
+    margin: 20px;
+    box-shadow:0 2px 4px 0 rgba(0,0,0,0.2),0 1.5px 5px 0 rgba(0,0,0,0.19);
+}
+
+.claim-button {
+    border: 1px solid #073763;
+    background-color: #fff;
+    text-align: center;
+    margin:auto;
+    color: #073763;
+    justify-content: center;
+    padding: 3px 6px 3px 6px;
+    text-decoration: none;
+}
+
+.claim-button:hover {
+    background-color: #073763;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.order-form {
+    padding: 20px;
+    margin: 20px;
+    box-shadow:0 2px 4px 0 rgba(0,0,0,0.2),0 1.5px 5px 0 rgba(0,0,0,0.19);
+}
+
+.order-form input {
+    margin: 4px;
+}
+
+input, textarea { 
+    padding: 9px; 
+    border: solid 1px #E5E5E5; 
+    outline: 0; 
+    font: normal 13px/100% Verdana, Tahoma, sans-serif; 
+    width: 200px; 
+    background: #FFFFFF; 
+    } 
+   
+textarea { 
+    width: 400px; 
+    max-width: 400px; 
+    height: 150px; 
+    line-height: 150%; 
+    } 
+   
+input:hover, textarea:hover, 
+input:focus, textarea:focus { 
+    border-color: #C9C9C9; 
+    } 
+   
+.form label { 
+    margin-left: 10px; 
+    color: #999999; 
+    } 
+   
+.submit input { 
+    width: auto; 
+    padding: 9px 15px; 
+    background: #617798; 
+    border: 0; 
+    font-size: 14px; 
+    color: #FFFFFF; 
+    }

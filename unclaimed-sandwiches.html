@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cool App &mdash; About</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script>
+                function openNav() {
+                    document.getElementById("myNav").style.width = "100%";
+                }
+                function closeNav() {
+                    document.getElementById("myNav").style.width = "0%";
+                }
+        </script>
+    </head>
+
+    <body>
+        <nav>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">How busy is the cafeteria?</a>
+                    <a href="order-sandwich.html">Order Sandwich</a>
+                    <a href="unclaimed-sandwiches.html">Unclaimed Sandwiches</a>
+                    <a href="data.html">Data</a>
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            <div class="nav-bar">
+                <span class="menu-button" onclick="openNav()">&#9776; Menu</span>
+                <class class="nav-bar"></class>
+            </div>
+            <div class="uoscs">
+                <div class="unordered-sandwich-card">
+                    <h2>Sandwich Order #787</h2>
+                    <ul>
+                        <li>Bread: Wheat</li>
+                        <li>Meat: Ham, Pepperoni</li>
+                        <li>Cheese: American</li>
+                        <li>Spread: Mayo</li>
+                        <li>Other Toppings: Lettuce</li>
+                        <li>Side: Chips</li>
+                    </ul>
+                    <span style="display: flex;justify-content: center;">
+                    <a class="claim-button" style="margin:auto;" href="#">Claim</a>
+                    </span>
+                </div>
+                <div class="unordered-sandwich-card">
+                    <h2>Sandwich Order #791</h2>
+                    <ul>
+                        <li>Bread: Whole Grain</li>
+                        <li>Meat: Chicken</li>
+                        <li>Cheese: Pepper Jack</li>
+                        <li>Spread: BBQ Sauce</li>
+                        <li>Other Toppings: Pickles, Spinach</li>
+                        <li>Side: French Fries</li>
+                    </ul>
+                    <span style="display: flex;justify-content: center;">
+                    <a class="claim-button" style="margin:auto;" href="#">Claim</a>
+                    </span>
+                </div>
+                <div class="unordered-sandwich-card">
+                    <h2>Sandwich Order #795</h2>
+                    <ul>
+                        <li>Bread: Wheat</li>
+                        <li>Meat: Bacon</li>
+                        <li>Cheese: American</li>
+                        <li>Spread: Mayo</li>
+                        <li>Other Toppings: Lettuce, Tomato</li>
+                        <li>Side: Potato Wedges</li>
+                    </ul>
+                    <span style="display: flex;justify-content: center;">
+                    <a class="claim-button" style="margin:auto;" href="#">Claim</a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </body>
+</html>

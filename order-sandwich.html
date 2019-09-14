@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cool App &mdash; Order Sandwich</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script>
+                function openNav() {
+                    document.getElementById("myNav").style.width = "100%";
+                }
+                function closeNav() {
+                    document.getElementById("myNav").style.width = "0%";
+                }
+        </script>
+    </head>
+
+    <body>
+        <nav>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">How busy is the cafeteria?</a>
+                    <a href="order-sandwich.html">Order Sandwich</a>
+                    <a href="unclaimed-sandwiches.html">Unclaimed Sandwiches</a>
+                    <a href="data.html">Data</a>
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            <div class="nav-bar">
+                <span class="menu-button" onclick="openNav()">&#9776; Menu</span>
+                <class class="nav-bar"></class>
+            </div>
+            <div class="order-form">
+                <form>
+                    <h2>Your Information:</h2>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="firstname">
+                    <br>
+                    Last Name:
+                    <input type="text" name="lastname">
+                    <br>
+                    Phone Number:
+                    <input type="tel" name="phone-number">
+                    <br>
+
+                    <h2>Your Sandwich:</h2>
+                    Bread:
+                    <br>
+                    <input type="radio" name="bread" value="Whole Grain">Whole Grain
+                    <br>
+                    <input type="radio" name="bread" value="Wheat">Wheat
+                    <br>
+
+                    Meat:
+                    <br>
+                    <input type="checkbox" name="meat" value="Chicken">Chicken
+                    <br>
+                    <input type="checkbox" name="meat" value="Roast Beef">Roast Beef
+                    <br>
+                    <input type="checkbox" name="meat" value="Turkey">Turkey
+                    <br>
+                    <input type="checkbox" name="meat" value="Pepperoni">Pepperoni
+                    <br>
+                    <input type="checkbox" name="meat" value="Ham">Ham
+                    <br>
+
+                    Cheese:
+                    <br>
+                    <input type="checkbox" name="cheese" value="American">American
+                    <br>
+                    <input type="checkbox" name="cheese" value="Pepper Jack">Pepper Jack
+                    <br>
+                    <input type="checkbox" name="cheese" value="Cheddar">Cheddar
+                    <br>
+                    <input type="checkbox" name="cheese" value="Provolone">Provolone
+                    <br>
+
+                    Spread:
+                    <br>
+                    <input type="checkbox" name="spread" value="Mayo">Mayo
+                    <br>
+                    <input type="checkbox" name="spread" value="BBQ">BBQ Sauce
+                    <br>
+                    <input type="checkbox" name="spread" value="Ketchup">Ketchup
+                    <br>
+                    <input type="checkbox" name="spread" value="Mustard">Mustard
+                    <br>
+
+                    Other Toppings:
+                    <br>
+                    <input type="checkbox" name="other-toppings" value="Lettuce">Lettuce
+                    <br>
+                    <input type="checkbox" name="other-toppings" value="Tomatos">Tomatos
+                    <br>
+
+                    Side:
+                    <br>
+                    <input type="radio" name="side" value="Fries">French Fries
+                    <br>
+                    <input type="radio" name="side" value="Chips">Chips
+                    <br>
+                    <input type="radio" name="side" value="Potato Wedges">Potato Wedges
+                    <br>
+
+                    <button class="claim-button">Order</button>
+
+                </form>
+            </div>
+        </nav>
+    </body>
+</html>
