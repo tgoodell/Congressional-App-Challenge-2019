@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cool App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script>
+                function openNav() {
+                    document.getElementById("myNav").style.width = "100%";
+                }
+                function closeNav() {
+                    document.getElementById("myNav").style.width = "0%";
+                }
+        </script>
+    </head>
+
+    <body>
+        <nav>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">How busy is the cafeteria?</a>
+                    <a href="order-sandwich.html">Order Sandwich</a>
+                    <a href="unclaimed-sandwiches.html">Unclaimed Sandwiches</a>
+                    <a href="data.html">Data</a>
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            <div class="nav-bar">
+                <span class="menu-button" onclick="openNav()">&#9776; Menu</span>
+                <class class="nav-bar"></class>
+            </div>
+        </nav>
+        <section>
+            <h1 style="margin:20px;text-align:center;font-size:50px">Data and Statistics</h1>
+            <div class="card" style="text-align:center;">
+                <h1>Sandwiches Ordered</h1>
+                <img src="charts/sandwiches-ordered.png">
+            </div>
+
+            <div class="card" style="text-align:center;">
+                <h1>Number of Students in Line</h1>
+                <img src="charts/students-in-line.png">
+            </div>
+        </section>
+    </body>
+</html>
