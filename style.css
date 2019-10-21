@@ -126,6 +126,27 @@ a {
     box-shadow:0 2px 4px 0 rgba(0,0,0,0.2),0 1.5px 5px 0 rgba(0,0,0,0.19);
 }
 
+@media screen and (max-width: 1311px) {
+    .uoscs {
+        margin: 5px;
+    }
+
+    .unordered-sandwich-card {
+        margin: 5px;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .uoscs {
+        flex-direction: column;
+    }
+
+    .unordered-sandwich-card {
+        width: auto;
+    }
+}
+
 .claim-button {
     border: 1px solid #073763;
     background-color: #fff;
