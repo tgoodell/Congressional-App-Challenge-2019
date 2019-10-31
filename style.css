@@ -136,6 +136,11 @@ a {
         margin: 5px;
         width: auto;
     }
+
+    .card {
+        width: auto;
+        margin: 5px;
+    }
 }
 
 .claim-button, .claim-button a {
